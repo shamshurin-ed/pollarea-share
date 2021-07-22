@@ -92,11 +92,6 @@ html {
   border-radius: 36px;
 }
 
-.share-card__content-image-wrap:last-child .share-card__content-image-statistic {
-  left: auto;
-  right: 40px;
-}
-
 .share-card__content-image-statistic.share-card__content-image-statistic--is-active::before {
   width: 40px;
   height: 40px;

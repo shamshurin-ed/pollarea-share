@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
 html {
-  background-color: silver;
+  background-color: #dedede;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -9,6 +9,7 @@ html {
   width: 1200px;
   max-width: calc(100% - 40px);
   margin: 0 auto;
+  padding: 40px 0;
 }
 
 .share-card {
@@ -90,7 +91,7 @@ html {
   align-items: center;
   justify-content: center;
   width: 255px;
-  padding: 16px 0;
+  height: 72px;
 
   color: #fff;
   font-size: 32px;

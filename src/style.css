@@ -88,8 +88,9 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 255px;
+  /*width: 255px;*/
   height: 72px;
+  padding: 0 26px;
 
   color: #fff;
   font-size: 32px;

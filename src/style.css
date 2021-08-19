@@ -12,6 +12,13 @@ html {
   padding: 40px 0;
 }
 
+@media all and (max-width: 480px) {
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+
 .share-card {
   margin: 0 auto;
 
@@ -23,6 +30,33 @@ html {
 
   font-size: 32px;
   line-height: 49px;
+}
+
+@media all and (max-width: 1024px) {
+  .share-card__text {
+    padding: 20px 24px;
+
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .share-card__text {
+    padding: 16px 20px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .share-card__text {
+    padding: 12px 15px;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .share-card__text-username {
@@ -68,6 +102,24 @@ html {
   transform: translate(-50%, -50%);
 }
 
+@media all and (max-width: 1024px) {
+  .share-card__content-inner::after {
+    width: 60px;
+    height: 60px;
+
+    font-size: 28px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .share-card__content-inner::after {
+    width: 42px;
+    height: 42px;
+
+    font-size: 18px;
+  }
+}
+
 .share-card__content-image-wrap {
   position: relative;
 }
@@ -88,7 +140,6 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  /*width: 255px;*/
   height: 72px;
   padding: 0 26px;
 
@@ -109,4 +160,63 @@ html {
   background-size: contain;
   background-position: center;
   margin-right: 16px;
+}
+
+@media all and (max-width: 1024px) {
+  .share-card__content-image-statistic {
+    bottom: 20px;
+    left: 20px;
+
+    height: 54px;
+    padding: 0 22px;
+
+    font-size: 24px;
+
+    border-radius: 27px;
+  }
+
+  .share-card__content-image-statistic.share-card__content-image-statistic--is-active::before {
+    width: 26px;
+    height: 26px;
+    margin-right: 12px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .share-card__content-image-statistic {
+    bottom: 10px;
+    left: 10px;
+
+    height: 38px;
+    padding: 0 16px;
+
+    font-size: 16px;
+
+    border-radius: 19px;
+  }
+
+  .share-card__content-image-statistic.share-card__content-image-statistic--is-active::before {
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .share-card__content-image-statistic {
+    bottom: 8px;
+    left: 8px;
+
+    height: 28px;
+    padding: 0 12px;
+
+    font-size: 12px;
+
+    border-radius: 14px;
+  }
+
+  .share-card__content-image-statistic.share-card__content-image-statistic--is-active::before {
+    width: 14px;
+    height: 14px;
+  }
 }
